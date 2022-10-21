@@ -1,5 +1,5 @@
 query Dragons {
-	no_cache: spacex_dragons {
+	spacex_dragons {
 		name
 		active
 	}
