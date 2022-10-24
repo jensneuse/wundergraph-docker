@@ -1,5 +1,5 @@
 query Dragons {
-	test8: spacex_dragons {
+	test9: spacex_dragons {
 		name
 		active
 	}
