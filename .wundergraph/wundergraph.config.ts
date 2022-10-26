@@ -4,6 +4,7 @@ import {
 	cors,
 	EnvironmentVariable,
 	introspect,
+	templates,
 } from '@wundergraph/sdk';
 import server from './wundergraph.server';
 import operations from './wundergraph.operations';
@@ -25,7 +26,13 @@ configureWunderGraphApplication({
 	application: myApplication,
 	server,
 	operations,
-	codeGenerators: [],
+	codeGenerators: [
+		{
+			templates: [
+				...templates.typescript.all,
+			],
+		}
+	],
 	cors: {
 		...cors.allowAll,
 		allowedOrigins:
