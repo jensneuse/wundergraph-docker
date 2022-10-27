@@ -28,13 +28,13 @@ export default configureWunderGraphOperations<OperationsConfiguration>({
 			...config,
 		}),
 		custom: {
-/*			Dragons: config => ({
+			Dragons: config => ({
 				...config,
 				caching: {
 					...config.caching,
 					enable: true,
 				}
-			})*/
+			})
 		},
 	},
 });
